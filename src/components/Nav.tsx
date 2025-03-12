@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { WalletComponents } from "./WalletComponet";
 
 const Nav = () => {
+  console.log();
   return (
     <div className="flex justify-between items-center p-4 md:py-8 md:px-16 border-b border-[#8F8F8F]">
       <Image
@@ -17,7 +19,9 @@ const Nav = () => {
         <p>Plan</p>
       </div>
       <div>
-        <button className="bg-[#1E3A8A] px-[26px] py-[12px] rounded-[24px] text-white">Connect Wallet</button>
+        {/* <button className="bg-[#1E3A8A] px-[26px] py-[12px] rounded-[24px] text-white">Connect Wallet</button> */}
+        {/* <appkit-button /> */}
+        <WalletComponents />
       </div>
     </div>
   );
